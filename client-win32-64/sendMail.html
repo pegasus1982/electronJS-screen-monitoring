@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href="assets/css/custom-style.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+        <title>Screen Monitoring Client</title>
+        <!-- Vendor Styles -->
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Theme Styles -->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/global/global.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+        <!-- normal script imports etc  -->
+        <script src="assets/vendor/jquery.min.js"></script>
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+        <script type="text/javascript" src="image-picker.min.js"></script>
+    </head>
+    <body>
+        <div id="register-form" class="s-promo-block-v7 g-bg-position--center g-bg-color--dark-light" style="background: url('assets/img/1920x1080/06.jpg') no-repeat;">
+            <div class="g-container--sm g-padding-y-40--xs g-padding-y-125--xsm">
+                <div class="g-text-center--xs g-margin-b-60--xs">
+                    <p class="text-uppercase g-font-size-14--xs g-font-weight--600 g-color--white-opacity g-letter-spacing--2 g-margin-b-20--xs">Send Your Info</p>
+                    <h2 class="g-font-size-32--xs g-font-size-32--md g-color--white">To The Manager</h2>
+                </div>
+                <form class="center-block g-width-500--sm g-width-550--md">
+                    <div class="g-margin-b-25--xs">
+                        <input id="your-mail" type="email" class="form-control s-form-v3__input" placeholder="Your Email">
+                    </div>
+                    <div class="g-margin-b-25--xs">
+                        <input id="manager-mail" type="email" class="form-control s-form-v3__input" placeholder="Manager's Email">
+                    </div>
+                    <h6 class="g-color--white">Your Unique ID</h6>
+                    <div class="g-margin-b-25--xs">
+                        <input id="your-id" type="text" class="form-control s-form-v3__input" placeholder="ID">
+                    </div>
+                    <div class="g-text-center--xs">
+                        <button id="send-info" type="button" class="text-uppercase s-btn s-btn--sm s-btn--white-brd g-radius--50 g-padding-x-60--xs g-margin-b-20--xs">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="sendMail.js"></script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
+    <script>
+        Email.send("m19950108@hotmail.com",
+            "gdm19920108@gmail.com",
+            "This is a subject",
+            "this is the body",
+            {token: "63cb3a19-2684-44fa-b76f-debf422d8b00"});
+    </script>
+</html>

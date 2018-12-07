@@ -1,0 +1,22 @@
+{
+  "name": "screen-monitor-client",
+  "version": "1.0.0",
+  "description": "A Screen Monitoring Client Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "gdm19920108",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.8.2"
+  },
+  "dependencies": {
+    "md5": "^2.2.1",
+    "nodemailer": "^4.6.4",
+    "sendmail": "^1.4.1",
+    "short-id": "0.1.0-1",
+    "simple-peer": "^9.0.0",
+    "twilio": "^3.15.0"
+  }
+}

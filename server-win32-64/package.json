@@ -1,0 +1,17 @@
+{
+  "name": "screen-monitor-server",
+  "version": "1.0.0",
+  "description": "Server for Screen Monitoring Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "gdm19920108",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.8.2"
+  },
+  "dependencies": {
+    "md5": "^2.2.1"
+  }
+}
